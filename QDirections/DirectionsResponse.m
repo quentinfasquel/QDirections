@@ -67,7 +67,6 @@ NSString * const kDirectionsStatusCodeUnknownError          = @"UNKNOWN_ERROR";
         NSDictionary * JSON = [data objectFromJSONData];
 
         _statusCode = [self codeForString:[JSON valueForKey:@"status"]];
-        
         NSArray * routes = [JSON valueForKey:@"routes"];
         
         if (routes && [routes count] > 0)

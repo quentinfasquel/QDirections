@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4E091D4A14ED7AFB007591CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D4914ED7AFB007591CD /* Foundation.framework */; };
 		4E091D5814ED7AFC007591CD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D5714ED7AFC007591CD /* SenTestingKit.framework */; };
-		4E091D5A14ED7AFC007591CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D5914ED7AFC007591CD /* UIKit.framework */; };
 		4E091D5B14ED7AFC007591CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D4914ED7AFB007591CD /* Foundation.framework */; };
 		4E091D5E14ED7AFC007591CD /* libQDirections.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D4614ED7AFB007591CD /* libQDirections.a */; };
 		4E091D6414ED7AFC007591CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E091D6214ED7AFC007591CD /* InfoPlist.strings */; };
@@ -29,6 +28,7 @@
 		4E091D9214ED7B2B007591CD /* QRouteStepInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E091D8B14ED7B2B007591CD /* QRouteStepInternal.h */; };
 		4E4A3B8314EE581A001E1669 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4A3B8014EE581A001E1669 /* JSONKit.h */; };
 		4E4A3B8414EE581A001E1669 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A3B8114EE581A001E1669 /* JSONKit.m */; };
+		4E4A3B9214EE7019001E1669 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4A3B9114EE7019001E1669 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		4E091D4D14ED7AFB007591CD /* QDirections-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QDirections-Prefix.pch"; sourceTree = "<group>"; };
 		4E091D5614ED7AFC007591CD /* QDirectionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QDirectionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E091D5714ED7AFC007591CD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4E091D5914ED7AFC007591CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4E091D6114ED7AFC007591CD /* QDirectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QDirectionsTests-Info.plist"; sourceTree = "<group>"; };
 		4E091D6314ED7AFC007591CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4E091D6514ED7AFC007591CD /* QDirectionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDirectionsTests.h; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		4E4A3B8014EE581A001E1669 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		4E4A3B8114EE581A001E1669 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		4E4A3B8214EE581A001E1669 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4E4A3B9114EE7019001E1669 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4A3B9214EE7019001E1669 /* CoreLocation.framework in Frameworks */,
 				4E091D4A14ED7AFB007591CD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,7 +86,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E091D5814ED7AFC007591CD /* SenTestingKit.framework in Frameworks */,
-				4E091D5A14ED7AFC007591CD /* UIKit.framework in Frameworks */,
 				4E091D5B14ED7AFC007591CD /* Foundation.framework in Frameworks */,
 				4E091D5E14ED7AFC007591CD /* libQDirections.a in Frameworks */,
 			);
@@ -117,9 +117,9 @@
 		4E091D4814ED7AFB007591CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E4A3B9114EE7019001E1669 /* CoreLocation.framework */,
 				4E091D4914ED7AFB007591CD /* Foundation.framework */,
 				4E091D5714ED7AFC007591CD /* SenTestingKit.framework */,
-				4E091D5914ED7AFC007591CD /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
