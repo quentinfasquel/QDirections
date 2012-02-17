@@ -1,0 +1,10 @@
+
+QDirections provides a service that calculates directions between locations (specified as an origin and a destination). It works with both addresses and coordinates.
+The service use the Google Directions API : http://code.google.com/apis/maps/documentation/directions/#DirectionsRequests
+
+The results is a QRoute, made of several QRouteStep.
+
+Some of the Google Directions API features are still missing :
+- only one QRoute is returned while several are availables
+- 'waypoints' cannot be specified
+
