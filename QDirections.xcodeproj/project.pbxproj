@@ -8,13 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		4E091D4A14ED7AFB007591CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D4914ED7AFB007591CD /* Foundation.framework */; };
-		4E091D5014ED7AFB007591CD /* QDirections.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E091D4F14ED7AFB007591CD /* QDirections.m */; };
 		4E091D5814ED7AFC007591CD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D5714ED7AFC007591CD /* SenTestingKit.framework */; };
 		4E091D5A14ED7AFC007591CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D5914ED7AFC007591CD /* UIKit.framework */; };
 		4E091D5B14ED7AFC007591CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D4914ED7AFB007591CD /* Foundation.framework */; };
 		4E091D5E14ED7AFC007591CD /* libQDirections.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E091D4614ED7AFB007591CD /* libQDirections.a */; };
 		4E091D6414ED7AFC007591CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E091D6214ED7AFC007591CD /* InfoPlist.strings */; };
 		4E091D6714ED7AFC007591CD /* QDirectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E091D6614ED7AFC007591CD /* QDirectionsTests.m */; };
+		4E091D7F14ED7B1B007591CD /* DirectionsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E091D7914ED7B1B007591CD /* DirectionsRequest.h */; };
+		4E091D8014ED7B1B007591CD /* DirectionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E091D7A14ED7B1B007591CD /* DirectionsRequest.m */; };
+		4E091D8114ED7B1B007591CD /* DirectionsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E091D7B14ED7B1B007591CD /* DirectionsResponse.h */; };
+		4E091D8214ED7B1B007591CD /* DirectionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E091D7C14ED7B1B007591CD /* DirectionsResponse.m */; };
+		4E091D8314ED7B1B007591CD /* NSObject+DirectionsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E091D7D14ED7B1B007591CD /* NSObject+DirectionsRequest.h */; };
+		4E091D8414ED7B1B007591CD /* NSObject+DirectionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E091D7E14ED7B1B007591CD /* NSObject+DirectionsRequest.m */; };
+		4E091D8C14ED7B2B007591CD /* QDirections.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E091D8514ED7B2B007591CD /* QDirections.h */; };
+		4E091D8D14ED7B2B007591CD /* QDirections.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E091D8614ED7B2B007591CD /* QDirections.m */; };
+		4E091D8E14ED7B2B007591CD /* QRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E091D8714ED7B2B007591CD /* QRoute.h */; };
+		4E091D8F14ED7B2B007591CD /* QRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E091D8814ED7B2B007591CD /* QRoute.m */; };
+		4E091D9014ED7B2B007591CD /* QRouteStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E091D8914ED7B2B007591CD /* QRouteStep.h */; };
+		4E091D9114ED7B2B007591CD /* QRouteStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E091D8A14ED7B2B007591CD /* QRouteStep.m */; };
+		4E091D9214ED7B2B007591CD /* QRouteStepInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E091D8B14ED7B2B007591CD /* QRouteStepInternal.h */; };
+		4E4A3B8314EE581A001E1669 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4A3B8014EE581A001E1669 /* JSONKit.h */; };
+		4E4A3B8414EE581A001E1669 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A3B8114EE581A001E1669 /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +44,31 @@
 /* Begin PBXFileReference section */
 		4E091D4614ED7AFB007591CD /* libQDirections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQDirections.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E091D4914ED7AFB007591CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4E091D4D14ED7AFB007591CD /* QDirections-Prefix.pch */ = {isa = PBXFileReference; path = "QDirections-Prefix.pch"; sourceTree = "<group>"; };
-		4E091D4E14ED7AFB007591CD /* QDirections.h */ = {isa = PBXFileReference; path = QDirections.h; sourceTree = "<group>"; };
-		4E091D4F14ED7AFB007591CD /* QDirections.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDirections.m; sourceTree = "<group>"; };
+		4E091D4D14ED7AFB007591CD /* QDirections-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QDirections-Prefix.pch"; sourceTree = "<group>"; };
 		4E091D5614ED7AFC007591CD /* QDirectionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QDirectionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E091D5714ED7AFC007591CD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4E091D5914ED7AFC007591CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		4E091D6114ED7AFC007591CD /* QDirectionsTests-Info.plist */ = {isa = PBXFileReference; path = "QDirectionsTests-Info.plist"; sourceTree = "<group>"; };
+		4E091D6114ED7AFC007591CD /* QDirectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QDirectionsTests-Info.plist"; sourceTree = "<group>"; };
 		4E091D6314ED7AFC007591CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4E091D6514ED7AFC007591CD /* QDirectionsTests.h */ = {isa = PBXFileReference; path = QDirectionsTests.h; sourceTree = "<group>"; };
+		4E091D6514ED7AFC007591CD /* QDirectionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDirectionsTests.h; sourceTree = "<group>"; };
 		4E091D6614ED7AFC007591CD /* QDirectionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDirectionsTests.m; sourceTree = "<group>"; };
+		4E091D7914ED7B1B007591CD /* DirectionsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsRequest.h; sourceTree = "<group>"; };
+		4E091D7A14ED7B1B007591CD /* DirectionsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsRequest.m; sourceTree = "<group>"; };
+		4E091D7B14ED7B1B007591CD /* DirectionsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsResponse.h; sourceTree = "<group>"; };
+		4E091D7C14ED7B1B007591CD /* DirectionsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsResponse.m; sourceTree = "<group>"; };
+		4E091D7D14ED7B1B007591CD /* NSObject+DirectionsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DirectionsRequest.h"; sourceTree = "<group>"; };
+		4E091D7E14ED7B1B007591CD /* NSObject+DirectionsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DirectionsRequest.m"; sourceTree = "<group>"; };
+		4E091D8514ED7B2B007591CD /* QDirections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDirections.h; sourceTree = "<group>"; };
+		4E091D8614ED7B2B007591CD /* QDirections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDirections.m; sourceTree = "<group>"; };
+		4E091D8714ED7B2B007591CD /* QRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRoute.h; sourceTree = "<group>"; };
+		4E091D8814ED7B2B007591CD /* QRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRoute.m; sourceTree = "<group>"; };
+		4E091D8914ED7B2B007591CD /* QRouteStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRouteStep.h; sourceTree = "<group>"; };
+		4E091D8A14ED7B2B007591CD /* QRouteStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRouteStep.m; sourceTree = "<group>"; };
+		4E091D8B14ED7B2B007591CD /* QRouteStepInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRouteStepInternal.h; sourceTree = "<group>"; };
+		4E4A3B7F14EE581A001E1669 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		4E4A3B8014EE581A001E1669 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		4E4A3B8114EE581A001E1669 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		4E4A3B8214EE581A001E1669 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +97,7 @@
 		4E091D3B14ED7AFB007591CD = {
 			isa = PBXGroup;
 			children = (
+				4E4A3B7D14EE581A001E1669 /* External */,
 				4E091D4B14ED7AFB007591CD /* QDirections */,
 				4E091D5F14ED7AFC007591CD /* QDirectionsTests */,
 				4E091D4814ED7AFB007591CD /* Frameworks */,
@@ -97,8 +127,13 @@
 		4E091D4B14ED7AFB007591CD /* QDirections */ = {
 			isa = PBXGroup;
 			children = (
-				4E091D4E14ED7AFB007591CD /* QDirections.h */,
-				4E091D4F14ED7AFB007591CD /* QDirections.m */,
+				4E4A3B8F14EE6A8F001E1669 /* Private */,
+				4E091D8514ED7B2B007591CD /* QDirections.h */,
+				4E091D8614ED7B2B007591CD /* QDirections.m */,
+				4E091D8714ED7B2B007591CD /* QRoute.h */,
+				4E091D8814ED7B2B007591CD /* QRoute.m */,
+				4E091D8914ED7B2B007591CD /* QRouteStep.h */,
+				4E091D8A14ED7B2B007591CD /* QRouteStep.m */,
 				4E091D4C14ED7AFB007591CD /* Supporting Files */,
 			);
 			path = QDirections;
@@ -131,6 +166,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4E4A3B7D14EE581A001E1669 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				4E4A3B7E14EE581A001E1669 /* JSONKit */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		4E4A3B7E14EE581A001E1669 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				4E4A3B7F14EE581A001E1669 /* CHANGELOG.md */,
+				4E4A3B8014EE581A001E1669 /* JSONKit.h */,
+				4E4A3B8114EE581A001E1669 /* JSONKit.m */,
+				4E4A3B8214EE581A001E1669 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		4E4A3B8F14EE6A8F001E1669 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				4E091D7914ED7B1B007591CD /* DirectionsRequest.h */,
+				4E091D7A14ED7B1B007591CD /* DirectionsRequest.m */,
+				4E091D7B14ED7B1B007591CD /* DirectionsResponse.h */,
+				4E091D7C14ED7B1B007591CD /* DirectionsResponse.m */,
+				4E091D7D14ED7B1B007591CD /* NSObject+DirectionsRequest.h */,
+				4E091D7E14ED7B1B007591CD /* NSObject+DirectionsRequest.m */,
+				4E091D8B14ED7B2B007591CD /* QRouteStepInternal.h */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -138,6 +206,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E091D7F14ED7B1B007591CD /* DirectionsRequest.h in Headers */,
+				4E091D8114ED7B1B007591CD /* DirectionsResponse.h in Headers */,
+				4E091D8314ED7B1B007591CD /* NSObject+DirectionsRequest.h in Headers */,
+				4E091D8C14ED7B2B007591CD /* QDirections.h in Headers */,
+				4E091D8E14ED7B2B007591CD /* QRoute.h in Headers */,
+				4E091D9014ED7B2B007591CD /* QRouteStep.h in Headers */,
+				4E091D9214ED7B2B007591CD /* QRouteStepInternal.h in Headers */,
+				4E4A3B8314EE581A001E1669 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E091D5014ED7AFB007591CD /* QDirections.m in Sources */,
+				4E091D8014ED7B1B007591CD /* DirectionsRequest.m in Sources */,
+				4E091D8214ED7B1B007591CD /* DirectionsResponse.m in Sources */,
+				4E091D8414ED7B1B007591CD /* NSObject+DirectionsRequest.m in Sources */,
+				4E091D8D14ED7B2B007591CD /* QDirections.m in Sources */,
+				4E091D8F14ED7B2B007591CD /* QRoute.m in Sources */,
+				4E091D9114ED7B2B007591CD /* QRouteStep.m in Sources */,
+				4E4A3B8414EE581A001E1669 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +467,7 @@
 				4E091D6C14ED7AFC007591CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E091D6D14ED7AFC007591CD /* Build configuration list for PBXNativeTarget "QDirectionsTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +476,7 @@
 				4E091D6F14ED7AFC007591CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
